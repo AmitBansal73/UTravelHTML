@@ -1,0 +1,21 @@
+
+:root { --brand: #0d6efd; --brand-dark: #0b5ed7; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif; background: #f7f8fa; }
+.navbar-brand span { font-weight: 700; letter-spacing: .3px; }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.55)); }
+.hero-caption { position:absolute; bottom:12%; left:6%; color:#fff; text-shadow:0 6px 24px rgba(0,0,0,.5); }
+.section-title { letter-spacing: .3px; }
+.card { border: none; box-shadow: 0 12px 30px rgba(0,0,0,.06); }
+.card img { border-top-left-radius: .75rem; border-top-right-radius: .75rem; }
+.btn-brand { background: var(--brand); color:#fff; }
+.btn-brand:hover { background: var(--brand-dark); color:#fff; }
+.mini-carousel .carousel-item { height: 120px; }
+.mini-carousel .carousel-item img { object-fit: cover; height: 120px; width: 100%; }
+.hero-carousel .carousel-item { height: 68vh; min-height: 360px; }
+.hero-carousel .carousel-item img { width:100%; height:100%; object-fit: cover; }
+.filter-bar .form-select, .filter-bar .form-control { min-width: 180px; }
+footer { background:#0f172a; }
+footer a { color: rgba(255,255,255,.85); text-decoration:none; }
+footer a:hover { color:#fff; }
+.listing-card img { height: 180px; object-fit: cover; }
+@media (max-width: 576px){ .filter-bar .form-select, .filter-bar .form-control { min-width: 100%; } }
