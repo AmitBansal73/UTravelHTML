@@ -34,18 +34,19 @@
       <div class="card p-4 h-100">
         <form>
           <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input class="form-control" required>
+            <label class="form-label" for="name1">Full Name</label>
+            <input class="form-control" required placeholder="Enter your full name" id="name1" >
           </div>
           <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" required>
+            <label class="form-label" for="phone">Mobile No.</label>
+            <input type="tel" class="form-control" required placeholder="Enter your Mobile number" id="phone" 
+            pattern="[0-9]{10}" autocomplete="tel">
           </div>
           <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="5"></textarea>
+            <label class="form-label" for="message1">Message</label>
+            <textarea class="form-control" rows="5" id="message1"></textarea>
           </div>
-          <button class="btn btn-brand">Send</button>
+          <button class="btn btn-brand" type="submit">Send</button>
         </form>
       </div>
     </div>

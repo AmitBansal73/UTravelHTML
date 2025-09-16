@@ -44,24 +44,27 @@
         <h5 class="mb-3">Find Your Ride</h5>
         <form>
           <div class="mb-3">
-            <label class="form-label">Pickup Location</label>
-            <input class="form-control" placeholder="e.g., Dehradun Airport">
+            <label class="form-label" for="pick1">Pickup Location</label>
+            <input class="form-control" placeholder="e.g., Dehradun Airport" id="pick1" required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Drop Location</label>
-            <input class="form-control" placeholder="e.g., Mussoorie">
+            <label class="form-label" for="drop1">Drop Location</label>
+            <input class="form-control" placeholder="e.g., Mussoorie" id="drop1" required>
           </div>
           <div class="row g-3">
             <div class="col-6">
-              <label class="form-label">Date</label>
-              <input type="date" class="form-control">
-            </div>
+              <label class="form-label" for="date1">Date</label>
+              <input type="date" class="form-control"  id="date1" required>
+            </div>            
             <div class="col-6">
-              <label class="form-label">Car Type</label>
-              <select class="form-select">
+              <label class="form-label" for="car1">Car Type</label>
+              <select class="form-select" id="car1">
                 <option>Sedan</option><option>SUV</option><option>Tempo Traveller</option>
               </select>
             </div>
+            <div><label class="form-label" for="phone">Mobile No.</label>
+            <input type="tel" class="form-control" required placeholder="Enter your Mobile number" id="phone" 
+            pattern="[0-9]{10}" autocomplete="tel"></div>
           </div>
           <div class="d-grid mt-3"><button class="btn btn-brand">Search</button></div>
         </form>
